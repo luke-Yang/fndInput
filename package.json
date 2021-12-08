@@ -3,6 +3,12 @@
   "description": "一个可以控制输入正整数和小数的input组件",
   "version": "1.0.0",
   "author": "846834719@qq.com <846834719@qq.com>",
+
+  "main": "dist/fndInput.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luke-Yang/fndInput.git"
+  },
   "keywords": [
     "vue2",
     "input"

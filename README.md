@@ -6,13 +6,17 @@
 
 ``` bash
 # install dependencies
-npm install
+npm install fnd-input --dev-s 
 
-# serve with hot reload at localhost:8080
-npm run dev
+#use 
 
-# build for production with minification
-npm run build
-```
+>  在main.js中全局注册
+import FndInput from 'fnd-input'
+Vue.use(FndInput);
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+>在组件中使用
+
+   <fnd-input v-model="value" v-only-integer></fnd-input>
+     <br>
+     输入小数
+  <fnd-input v-model="value1" v-can-decimal:2></fnd-input>
