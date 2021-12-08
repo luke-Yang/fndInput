@@ -2,14 +2,16 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/plugin/index.js',
+  //entry: './src/plugin/index.js',//发布使用
+  entry: './src/main.js',//开发使用
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'fndInput.js',
-    library: 'fnd-input',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    filename: 'build.js',//开发使用
+    //filename: 'fndInput.js',//发布使用
+    // library: 'fnd-input',
+    // libraryTarget: 'umd',
+    // umdNamedDefine: true
   },
   module: {
     rules: [{

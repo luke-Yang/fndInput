@@ -1,16 +1,16 @@
 # fnd-input
 
-> 一个可以控制输入正整数和小数的input组件
+> 一个可以控制输入正整数和小数的 input 组件
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
-npm install fnd-input --dev-s 
+npm install fnd-input --dev-s
 
-#use 
+#use
 
->  在main.js中全局注册
+>在main.js中全局注册
 import FndInput from 'fnd-input'
 Vue.use(FndInput);
 
@@ -20,3 +20,4 @@ Vue.use(FndInput);
      <br>
      输入小数
   <fnd-input v-model="value1" v-can-decimal:2></fnd-input>
+```

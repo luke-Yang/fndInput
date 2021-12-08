@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     value:{{value}}
-     <fnd-input v-model="value" v-only-integer></fnd-input>
+     <fnd-input v-model="value" v-only-integer :error="true"></fnd-input>
      <br>
      value1:{{value1}}
-     <fnd-input v-model="value1" v-can-decimal:2></fnd-input>
+     <fnd-input v-model="value1" v-can-decimal:2 :disabled="true"></fnd-input>
   </div>
 </template>
 

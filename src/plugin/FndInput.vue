@@ -1,28 +1,36 @@
 <template>
-  <div class="fnd-input">
+  <div
+    class="fnd-input"
+    :class="{ 'is-disabled': disabled, 'is-error': error }"
+  >
     <input
-      :type="type"
+      type="text"
       class="fnd-input__inner"
       :value="value"
       @input="handleInput"
+      :disabled="disabled"
     />
   </div>
 </template>
 <script>
 export default {
-  props: ["value", "type"],
+  props: ["value", "disabled", "error"],
   data() {
     return {};
   },
   created() {},
-  mounted() {},
+  mounted() {
+    setTimeout(() => {
+      console.log(this.disabled);
+    });
+  },
   methods: {
     handleInput(e) {
       setTimeout(() => {
         this.$emit("input", e.target.value);
       });
-    },
-  },
+    }
+  }
 };
 </script>
 
